@@ -82,7 +82,7 @@ justify-items: right;
   }
   
   /*
-   * -- Layout Styles --
+   * -- Layout Styles --*/
    */
   .l-content {
     margin: 0 auto;
@@ -93,9 +93,8 @@ justify-items: right;
   }
   
   /*
-   * -- MENU STYLES --
-   * Make the menu have a very faint box-shadow.
-   */
+   * -- MENU STYLES --*/
+  
   .pure-menu {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   }
@@ -105,11 +104,8 @@ justify-items: right;
   }
   
   /*
-   * -- BANNER --
-   * The top banner with the headings. By using a combination
-   * of `display: table;` and `display: table-cell;`, we can
-   * vertically center the text.
-   */
+   * -- BANNER --*/
+  
   
   .banner {
     background: transparent
@@ -140,9 +136,8 @@ justify-items: right;
   }
   
   /*
-   * -- PRICING TABLE WRAPPER --
-   * This element wraps up all the pricing table elements
-   */
+   * -- ITEM TABLE WRAPPER --*/
+ 
   .pricing-tables,
   .information {
     max-width: 980px;
@@ -154,9 +149,8 @@ justify-items: right;
   }
   
   /*
-   * -- PRICING TABLE  --
-   * Every pricing table has the .pricing-table class
-   */
+   * -- ITEM TABLE  --*/
+  
   .pricing-table {
     border: 1px solid #ddd;
     margin: 0 0.5em 2em;
@@ -164,9 +158,8 @@ justify-items: right;
   }
   
   /*
-   * -- PRICING TABLE HEADER COLORS --
-   * Choose a different color based on the type of pricing table.
-   */
+   * -- ITEM TABLE HEADER COLORS --*/
+  
   .pricing-table-free .pricing-table-header {
     
     background-image: url(img/hsira.jpg) ;
@@ -213,9 +206,8 @@ justify-items: right;
     height: 14em;
   }
   /*
-   * -- PRICING TABLE HEADER --
-   * By default, a header is black/white, and has some styles for its <h2> name.
-   */
+   * -- PRICING TABLE HEADER --*/
+
   .pricing-table-header {
     background: #111;
     color: rgb(6, 5, 5);
@@ -229,9 +221,8 @@ justify-items: right;
   }
   
   /*
-   * -- PRICING TABLE PRICE --
-   * Styles for the price and the corresponding <span>per month</span>
-   */
+   * -- PRICING TABLE PRICE --*/
+
   .pricing-table-price {
     font-size: 6em;
     margin: 0.2em 0 0;
@@ -248,9 +239,8 @@ justify-items: right;
   }
   
   /*
-   * -- PRICING TABLE LIST --
-   * Each pricing table has a <ul> which is denoted by the .pricing-table-list class
-   */
+   * -- PRICING TABLE LIST --*/
+  
   .pricing-table-list {
     list-style-type: none;
     margin: 0;
