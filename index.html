@@ -6,13 +6,15 @@
     <meta name="description" content="A layout example that shows off a responsive pricing table.">
     <title>pure store</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/pure/pure-min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
-    <link rel="stylesheet" href="/css/pure/grids-responsive-min.css">
-    <link rel="stylesheet" href="/layouts/pricing/styles.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" href="css/mystyle.css">
+
+
 </head>
 <body>
+
+
 
 <div class="pure-g" id="haut">
 
@@ -46,13 +48,46 @@
         </center>
     </div>
     
-    <div class="pure-u-1 pure-u-md-1-5">
+    <div class="pure-u-1 pure-u-md-1-5" id="main">
         <center>
             <br>
-            <img  src="img/mycart.png" id="mycart" alt="mycart">
+            <button class="pure-button" onclick=window.location.href='cart.html';><i class="fa fa-shopping-cart"></i></button>
+            <button  class="pure-button"  onclick="openNav()"><i class="fa fa-sign-in"></i></button>
         </center> 
     </div>
 </div>
+
+
+
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" id="ferme" onclick="closeNav()">&times;</a>
+    
+    <form action="action_page.php">
+      <div class="container">
+        <h2>Register</h2>
+        
+        <hr>
+    
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+    
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+        <hr>
+    
+        <p style="font-size: small;">By creating an account you agree to our <a href="#" id="lien">Terms & Privacy</a>.</p>
+        <button type="submit" class="registerbtn">Register</button>
+      </div>
+    
+      <div class="container signin" style="padding: 1px;">
+        <p>Already have an account? <a href="#" id="lien">Sign in</a>.</p>
+      </div>
+    </form>
+
+  </div>
 
 
 <div class="banner">
@@ -66,8 +101,8 @@
     <div class="pricing-tables pure-g">
 
 
-        <div class="pure-u-1 pure-u-md-1-4">
-            <div class="pricing-table pricing-table-one">
+        <div class="pure-u-1 pure-u-md-1-4" >
+            <div class="pricing-table pricing-table-one" id="card">
                 <div class="pricing-table-header">
                                       
                     <h2>POUF</h2>
@@ -75,8 +110,12 @@
                 </div>
 
                 <ul class="pricing-table-list">
-                    <li>Air pods</li>
-                    <li>Custom sub-domain</li>
+                    <li>19.50$</li>
+                    <li><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span></li>
                     <li>Standard customer support</li>
                 </ul>
 
@@ -86,7 +125,7 @@
 
 
         <div class="pure-u-1 pure-u-md-1-4">
-            <div class="pricing-table pricing-table-free">
+            <div class="pricing-table pricing-table-free" id="card">
                 <div class="pricing-table-header">
                     <h2>TAPIS</h2>
 
@@ -94,8 +133,12 @@
                 </div>
 
                 <ul class="pricing-table-list">
-                    <li>Free setup</li>
-                    <li>Custom sub-domain</li>
+                    <li>19.50$</li>
+                    <li><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span></li>
                     <li>Standard customer support</li>
                   
                 </ul>
@@ -105,7 +148,7 @@
         </div>
 
         <div class="pure-u-1 pure-u-md-1-4">
-            <div class="pricing-table pricing-table-biz ">
+            <div class="pricing-table pricing-table-biz" id="card">
                 <div class="pricing-table-header">
                     <h2>Air Pods</h2>
 
@@ -113,8 +156,12 @@
                 </div>
 
                 <ul class="pricing-table-list">
-                    <li>Free setup</li>
-                    <li>Use your own domain</li>
+                    <li>19.50$</li>
+                    <li><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span></li>
                     <li>Standard customer support</li>
                     
                 </ul>
@@ -124,7 +171,7 @@
         </div>
 
         <div class="pure-u-1 pure-u-md-1-4">
-            <div class="pricing-table pricing-table-enterprise">
+            <div class="pricing-table pricing-table-enterprise" id="card">
                 <div class="pricing-table-header">
                     <h2>POTERIE</h2>
 
@@ -132,8 +179,12 @@
                 </div>
 
                 <ul class="pricing-table-list">
-                    <li>Free setup</li>
-                    <li>Use your own domain</li>
+                    <li>19.50$</li>
+                    <li><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span></li>
                     <li>Premium customer support</li>
                   
                 </ul>
@@ -152,7 +203,7 @@
     
     
             <div class="pure-u-1 pure-u-md-1-4">
-                <div class="pricing-table pricing-table-boz">
+                <div class="pricing-table pricing-table-boz" id="card">
                     <div class="pricing-table-header">
                                           
                         <h2>argane</h2>
@@ -160,8 +211,12 @@
                     </div>
     
                     <ul class="pricing-table-list">
-                        <li>Air pods</li>
-                        <li>Custom sub-domain</li>
+                        <li>19.50$</li>
+                        <li><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span></li>
                         <li>Standard customer support</li>
                     </ul>
     
@@ -171,7 +226,7 @@
     
     
             <div class="pure-u-1 pure-u-md-1-4">
-                <div class="pricing-table pricing-table-fr">
+                <div class="pricing-table pricing-table-fr" id="card">
                     <div class="pricing-table-header">
                         <h2>cup</h2>
     
@@ -179,10 +234,14 @@
                     </div>
     
                     <ul class="pricing-table-list">
-                        <li>Free setup</li>
-                        <li>Custom sub-domain</li>
-                        <li>Standard customer support</li>
-                      
+                       
+                        <li>19.50$</li>
+                        <li><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span></li>
+                       <li>Free setup</li>
                     </ul>
     
                     <button class="button-choose pure-button">add to cart</button>
@@ -190,7 +249,7 @@
             </div>
     
             <div class="pure-u-1 pure-u-md-1-4">
-                <div class="pricing-table pricing-table-bizm ">
+                <div class="pricing-table pricing-table-bizm" id="card">
                     <div class="pricing-table-header">
                         <h2>Air Pods</h2>
     
@@ -198,10 +257,14 @@
                     </div>
     
                     <ul class="pricing-table-list">
-                        <li>Free setup</li>
-                        <li>Use your own domain</li>
-                        <li>Standard customer support</li>
                         
+                        <li>19.50$</li>
+                        <li><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span></li>
+                            <li>Free setup</li>
                     </ul>
     
                     <button class="button-choose pure-button">add to cart</button>
@@ -209,7 +272,7 @@
             </div>
     
             <div class="pure-u-1 pure-u-md-1-4">
-                <div class="pricing-table pricing-table-enterprise">
+                <div class="pricing-table pricing-table-enterprise" id="card">
                     <div class="pricing-table-header">
                         <h2>POTERIE</h2>
     
@@ -217,10 +280,14 @@
                     </div>
     
                     <ul class="pricing-table-list">
+                        
+                        <li>19.50$</li>
+                    <li><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span></li>
                         <li>Free setup</li>
-                        <li>Use your own domain</li>
-                        <li>Premium customer support</li>
-                      
                     </ul>
     
                     <button class="button-choose pure-button">add to cart</button>
@@ -232,6 +299,17 @@
 
 
 
+        <div class="wrapper">
+            <label id="order" >Titre</label><br>
+            <div class="item"><img src="img/tagine.jpg" alt="" id="l1"></div>
+            <div class="item"><img src="img/sac.jpg" alt="" id="l1"></div>
+            <div class="item"><img src="img/theire.jpg" alt="" id="l1"></div>
+            <div class="item"><img src="img/belgha.jpg" alt="" id="l1"></div>
+            <div class="item"><img src="img/argent.jpg" alt="" id="l1"></div>
+            <div class="item"><img src="img/rabouz.jpg" alt="" id="l1"></div>
+            <div class="item"><img src="img/siniya.jpg" alt="" id="l1"></div>
+        </div>
+<br>
 
 
 
@@ -292,7 +370,7 @@
       </div>
     </center>
 
-
+<hr>
     <div class="pure-g">
     <div class="pure-u-1 pure-u-md-1-3">
         <p>
@@ -307,17 +385,18 @@
 </div>
 
     <div class="pure-u-1 pure-u-md-1-3" id="payment">
-       
        <center>
         <img class="pure-img" src="img/payment.png" id="pay" alt="payment" >
        </center> 
-            
-       
-        
+
     </div>
     </div>
         
 </div>
 
+
+
+
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="js/myscript.js"></script>
 </body>
 </html>

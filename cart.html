@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a responsive pricing table.">
+    <title>Cart</title>
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/pure/pure-min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="/css/pure/grids-responsive-min.css">
+    <link rel="stylesheet" href="/layouts/pricing/styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        #prod{
+            width: 100px;
+            height: 100px;
+        }
+        body{
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-bottom: 60px;
+        }
+      .cart-item {
+        border-bottom: 1px solid #eee;
+        padding: 1em 0;
+      }
+      .cart-item:last-child {
+        border-bottom: none;
+      }
+      .cart-item img {
+        float: left;
+        margin-right: 1em;
+      }
+      .cart-item h3 {
+        margin: 0;
+      }
+      .cart-item p {
+        margin: 0;
+        font-size: 0.9em;
+        color: #777;
+      }
+      .cart-item .quantity {
+        float: right;
+      }
+      .cart-item .quantity input {
+        width: 2em;
+        text-align: center;
+      }
+     
+      .cart-item .remove {
+        float: right;
+        font-size: 0.9em;
+        color: #777;
+        cursor: pointer;
+      }
+      .cart-item .remove:hover {
+        color: #000;
+      }
+      .cart-total {
+        border-top: 1px solid #eee;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: right;
+        padding: 1em 0;
+      }
+      .cart-total p {
+        margin: 0;
+      }
+
+
+#number{
+    width: 3em;
+    height: 2em;
+    margin: 2px;
+}
+#ferme{
+    margin-right: 3px;
+  font-size: 36px;
+  text-decoration: none;
+  color: #c52525;}
+
+
+/* checkout*/
+
+
+
+.pure-form input[type="text"],
+.pure-form input[type="email"] {
+  width: 70%;
+  margin-bottom: 15px;
+}
+
+.pure-form label {
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.pure-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+h3{
+    text-align: center;
+}
+
+
+
+
+    </style>
+    
+  </head>
+  <body>
+
+
+    <div class="pure-g" id="haut">
+
+        <div class="pure-u-1 pure-u-md-1-5"> 
+           <center><img  src="img/lo.png"   id="logo" alt="logo"></center> 
+        </div>
+    
+        <div class="pure-u-1 pure-u-md-3-5">
+            <center>
+            <div class="pure-menu pure-menu-horizontal">
+       
+                <a href="index.html" class="pure-menu-heading">artisanal Souk</a>
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
+                    <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Product</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
+                </ul>
+            </div>
+                
+                <div class="pure-u-1 form-box">
+                    <div class="l-box">
+                <form class="pure-form">
+             
+                    <input type="text" placeholder="Search your product" />
+                    <button type="submit" class="pure-button">Search</button>
+                </form>
+                    </div>
+                </div>
+            <br>
+    
+            </center>
+        </div>
+        
+        <div class="pure-u-1 pure-u-md-1-5" id="main">
+            <center>
+                <br>
+                <button class="pure-button" onclick=window.location.href='cart.html';><i class="fa fa-shopping-cart"></i></button>
+                <button  class="pure-button"  onclick="openNav()"><i class="fa fa-sign-in"></i></button>
+            </center> 
+        </div>
+    </div>
+    
+    
+    
+<hr>
+
+
+
+    <div class="pure-g">
+      <div class="pure-u-1">
+        <h3>Cart</h3>
+      </div>
+      <div class="pure-u-1">
+        <div class="cart-item">
+          <img src="img/ARGAN.jpg" alt="Product 1" id="prod">
+          <h4>argane</h4>
+          <p>$50.00</p>
+          <div class="quantity">
+            <input type="number" min="1" max="9" step="1" value="1" id="number">
+          </div>
+          <div class="remove">
+            <a href="#" id="ferme" >&times;</a>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img src="img/chaise.jpg" alt="Product 2" id="prod">
+          <h4>chair</h4>
+          <p>$30.00</p>
+          <div class="quantity">
+            <input type="number" min="1" max="9" step="1" value="1" id="number">
+          </div>
+          <div class="remove">
+            <a href="javascript:void(0)" id="ferme" >&times;</a>
+          </div>
+        </div>
+        <div class="cart-total">
+          <p>Total: $80.00</p>
+        </div>
+      </div>
+    </div>
+
+    <CEnter>
+      <div class="form-box" >
+        <button class="pure-button pure-button-primary">Continue Shopping</button>
+      </div>
+  </CEnter>
+
+
+    <hr>
+    <h3>checkout</h3>
+    <div class="pure-g">
+        
+        
+        <div class="pure-u-1 pure-u-md-1-2">
+          <h3>Shipping Information</h3>
+          <form class="pure-form pure-form-stacked">
+            <label>Full Name</label>
+            <input type="text" placeholder="Full Name">
+            <label>Address</label>
+            <input type="text" placeholder="Address">
+            <label>City</label>
+            <input type="text" placeholder="City">
+            <label>Zip Code</label>
+            <input type="text" placeholder="Zip Code">
+            <label>Phone Number</label>
+            <input type="text" placeholder="Phone Number">
+            <label>Email</label>
+            <input type="email" placeholder="Email">
+          </form>
+        </div>
+        
+        <div class="pure-u-1 pure-u-md-1-2">
+          <h3>Payment Information</h3>
+          <form class="pure-form pure-form-stacked">
+            <label>Card Number</label>
+            <input type="text" placeholder="Card Number">
+            <label>Expiration Date</label>
+            <input type="text" placeholder="MM/YY">
+            <label>Security Code</label>
+            <input type="text" placeholder="CVC">
+            <label>Billing Address</label>
+            <input type="text" placeholder="Billing Address">
+            <label>Billing Zip Code</label>
+            <input type="text" placeholder="Billing Zip Code">
+          </form>
+          <center>
+            <img src="img/payment.png" alt="" id="pay">
+          </center>
+          
+        
+        </div>
+      </div>
+     <br>
+   <center>
+        <div class="form-box" >
+          <button class="pure-button pure-button-primary">Place Order</button>
+        </div>
+    </center>
+      
+
+
+
+    
+  </body>
+</html>
