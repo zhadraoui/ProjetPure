@@ -1,0 +1,82 @@
+.l-content {
+  padding: 0.5em 2em;
+}
+#prod-1, #prod-2, #prod-3, #prod-4 {
+  width: 100px;
+  height: 100px;
+}
+.cart-item {
+  border-bottom: 2px solid #eee;
+  padding: 1em 0;
+}
+.cart-item:last-child {
+  border-bottom: none;
+}
+.cart-item img {
+  float: left;
+  margin-right: 1em;
+}
+.cart-item h3 {
+  margin: 0;
+}
+.cart-item p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #777;
+}
+.cart-item .quantity {
+  float: right;
+}
+.cart-item .quantity input {
+  width: 2em;
+  text-align: center;
+}
+.cart-item .remove {
+  float: right;
+  font-size: 0.9em;
+  color: #777;
+  cursor: pointer;
+}
+.cart-item .remove:hover {
+  color: #000;
+}
+.cart-total {
+  border-top: 1px solid #eee;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: right;
+  padding: 1em 0;
+}
+.cart-total p {
+  margin: 0;
+}
+#number {
+  width: 3em;
+  height: 2em;
+  margin: 2px;
+}
+#ferme-1, #ferme-2, #ferme-3, #ferme-4 {
+  margin-right: 3px;
+  margin-bottom: 5px;
+  font-size: 36px;
+  text-decoration: none;
+  color: #c52525;
+}
+/* checkout*/
+.pure-form input[type="text"], .pure-form input[type="email"] {
+  width: 70%;
+  margin-bottom: 15px;
+}
+.pure-form label {
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.pure-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+h3 {
+  text-align: center;
+}

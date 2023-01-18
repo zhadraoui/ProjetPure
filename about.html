@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a responsive item table.">
+    <title>pure store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/forms-min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+   
+
+</head>
+<body>
+
+<div class="pure-g" id="haut">
+
+    <div class="pure-u-1 pure-u-md-1-5"> 
+       <center>
+        
+        <img  src="img/lo.png"   id="logo" alt="logo">
+       </center> 
+       
+    </div>
+
+    <div class="pure-u-1 pure-u-md-3-5">
+        <center>
+        <div class="pure-menu pure-menu-horizontal">
+   
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="about.html" class="pure-menu-link">A propos</a></li>
+                <li class="pure-menu-item"><a href="index.php" class="pure-menu-link">Home</a></li>
+                <li class="pure-menu-item "><a href="index.php" class="pure-menu-link">Produits</a></li>
+                <li class="pure-menu-item"><a href="contact.php" class="pure-menu-link">Contact</a></li>
+            </ul>
+        </div>
+            <br>
+            <div class="pure-u-1 form-box">
+                <div class="l-box">
+            <form class="pure-form">
+         
+                <input type="text" placeholder="Search your product" />
+                <button type="submit" class="pure-button">Search</button>
+            </form>
+                </div>
+            </div>
+        <br>
+
+        </center>
+    </div>
+    
+    <!--div class="pure-u-1 pure-u-md-1-5" id="main">
+        <center>
+            <br>
+            <button class="pure-button" onclick=window.location.href='cart.html';><i class="fa fa-shopping-cart"></i></button>
+            <button  class="pure-button"  onclick="openNav()"><i class="fa fa-sign-in"></i></button>
+        </center> 
+    </div-->
+</div>
+
+
+
+<div class="pure-g">
+    <div class="pure-u-1">
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" id="ferme" onclick="closeNav()">&times;</a>
+    
+    <form action="#">
+      <div class="container">
+        <h2>Register</h2>
+        
+        <hr>
+    
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+    
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+        <hr>
+    
+        <p style="font-size: small;">By creating an account you agree to our <a href="#" id="lien">Terms & Privacy</a>.</p>
+        <button type="submit" class="registerbtn">Register</button>
+      </div>
+    
+      <div class="container signin" style="padding: 1px;">
+        <p>Already have an account? <a href="#" id="lien">Sign in</a>.</p>
+      </div>
+    </form>
+
+  </div>
+</div>
+</div>  
+
+
+
+<div class="banner" id="slideshow-container">
+    <button  class="pure-button"  onclick="openNavmenu()"><i class="fa fa-bars"></i></button>
+    <h1 class="banner-head" >
+        WELCOME TO YOUR<br>
+        ARTISANAL STORE
+    </h1>
+
+<!---- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>  -->
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1 pure-u-md-1-3">
+        <img src="img/sbaner1.png" class="pure-img" alt="sbaner" id="sbaner">
+    </div>
+
+    <div class="pure-u-1 pure-u-md-1-3">
+        <img src="img/sbaner2.png" class="pure-img" alt="sbaner" id="sbaner">
+    </div>
+
+    <div class="pure-u-1 pure-u-md-1-3">
+        <img src="img/sbaner4.png" class="pure-img" alt="sbaner" id="sbaner">
+    </div>
+</div>
+
+
+
+<hr>
+
+       
+<br>
+
+
+    <div class="information pure-g">
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="l-box">
+               <img class="pure-img" src="img/home.jpg" alt="" id="home">
+            </div>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="l-box">
+                <h3 class="information-head">More than just a website … an art to living.<br>
+
+                    Welcome into a world of authenticity and originality.</h3>
+                <p id="desc">
+                    Moroccan rugs,moroccan leather poufs and more of handicrafts products; We are pleased to present you with an incredible collection of authentic, handmade, and birthright quality Moroccan products, Made specifically for your preferences and responsibly made by particular craftspeople in high atlas mountains with whom we have long-standing connections. 
+
+                    Our objective is to bring Moroccan handicrafts to a wider audience, and our dedication is to you – our clients, You are assisting in the support of generations of artists and crafters who have been selling their items in local souks for decades. Each item, from our gorgeous poofs to our handmade rugs, has been personally picked for one-of-a-kindness, authenticity, and value. You too, may have a part of that rich legacy and attractive décor in your house.
+                    
+                    In MHM we also offer our clients wholesaling and private labeling services for thoses who are looking forward to setting up their own business.
+                    
+                    This is the Moroccan Handicraft store B To B you’ve been waiting for.
+                    
+                    We deliver international with express shipping DHL and fedex .
+                </p>
+            </div>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="l-box">
+                <h3 class="information-head">WHY TO BUY OUR PRODUCTS</h3>
+                <p>
+                    <ul id="desc">
+                        <li>Quick shipping</li>
+                        <br>
+                        <li>Proper price.</li>
+                        <br>
+                        <li>All of our handmade products are unique and masterfully crafted.</li>
+                        <br>
+                        <li>By buying our products you help women in the high atlas mountains to keep their business</li>
+                       <br>
+                        <li>Various types of products are available in our marketplace.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="l-box">
+                <img class="pure-img" src="img/Service.png" alt="" id="home">
+            </div>
+        </div>
+    </div> <!-- end information -->
+</div> <!-- end l-content -->
+
+<div class="footer l-box">
+
+<center>
+    <div class="pure-u-1 form-box">
+        <div class="l-box">
+          <h2 style="color: azure;">Subscribe Newsletter</h2>
+
+          <form class="pure-form">
+         
+            <input type="text" placeholder="Enter Email" />
+            <button type="submit" class="pure-button">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </center>
+
+<hr>
+    <div class="pure-g">
+    <div class="pure-u-1 pure-u-md-1-3">
+        <p>
+            © 2023 All rights reserved. Artisanal Souk
+        </p>
+    
+    </div>
+    
+<div class="pure-u-1 pure-u-md-1-3" >
+
+
+</div>
+
+    <div class="pure-u-1 pure-u-md-1-3" id="payment">
+       <center>
+        <img class="pure-img" src="img/payment.png" id="pay" alt="payment" >
+       </center>   
+    </div>
+</div>
+        
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
